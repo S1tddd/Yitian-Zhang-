@@ -40,8 +40,8 @@ def get_unique_neighbourhoods(df, default_neighbourhood="All"):
     return [default_neighbourhood] + neighbourhoods
 
 
-listings_path = '/Users/Zhuanz/Library/CloudStorage/OneDrive-BentleyUniversity/First Python project/pythonProject1/Final project/listings.csv'
-neighbourhoods_path = '/Users/Zhuanz/Library/CloudStorage/OneDrive-BentleyUniversity/First Python project/pythonProject1/Final project/neighbourhoods.csv'
+listings_path = 'Final project/listings.csv'
+neighbourhoods_path = 'Final project/neighbourhoods.csv'
 
 listings_df = pd.read_csv(listings_path)
 listings_df = clean_data(listings_df)
@@ -56,7 +56,7 @@ page = st.sidebar.radio("Go to", [
 if page == "Home":
     st.title("Boston Airbnb Data Explorer")
     st.write("Use the sidebar to explore various visualizations and insights about Boston's Airbnb listings.")
-    st.image("/Users/Zhuanz/Library/CloudStorage/OneDrive-BentleyUniversity/First Python project/pythonProject1/Final project/Boston_view_with_Airbnb_logo.jpg", caption="Explore Boston's Airbnb Listings", use_container_width=True)
+    st.image("Final project/Boston_view_with_Airbnb_logo.jpg", caption="Explore Boston's Airbnb Listings", use_container_width=True)
 
 # ----- Page 1: Average Prices -----
 elif page == "Average Prices":
